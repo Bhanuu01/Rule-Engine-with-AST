@@ -23,12 +23,11 @@ A simple Flask-based rule engine application(Simple UI, API and Backend, Data) t
 
 2. **Install the required packages:**
    
+   ```bash
+   pip install -r requirements.txt
+
+## Run the application:
+
   ```bash
-  pip install -r requirements.txt
+   python app.py
 
-
-3. **Run the application:**
-
-  ```bash
-  python app.py
-  By default, the application will start on http://127.0.0.1:5000/
