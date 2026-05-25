@@ -1,33 +1,39 @@
-# Rule-Engine-with-AST
-A simple Flask-based rule engine application(Simple UI, API and Backend, Data) to determine user eligibility based on attributes like age, department, income, spend etc.The system can use Abstract Syntax Tree (AST) to represent conditional rules and allow for dynamic creation,combination, and modification of these rules.
+# Rule Engine with AST
 
-## Features
+This repository contains a small Flask-based rule engine that uses an abstract syntax tree representation for conditional logic.
 
-- Add new rules to the database.
-- Evaluate rules against provided data.
-- Combine multiple rules using AND/OR operators.
-- Fetch and display existing rules.
+The project was built around a straightforward systems idea: instead of hardcoding eligibility logic directly into the application, represent rules as structured expressions that can be created, combined, and evaluated more flexibly.
 
-## Prerequisites
+## What this repo does
 
-- Python 3.8 or higher
-- `pip` (Python package installer)
+- creates and stores rules
+- evaluates rules against input attributes such as age, department, income, or spend
+- combines multiple rules with logical operators
+- exposes a simple UI and backend flow for working with those rules
 
-## Installation
+## Main files
 
-1. **Clone the repository:**
+- `app.py`
+  Core Flask application and rule-engine logic.
+- `templates/`
+  Basic frontend templates for interacting with the app.
+- `requirements.txt`
+  Python dependencies.
 
-   ```bash
-   git clone https://github.com/Bhanuu01/flask-rule-engine.git
-   cd flask-rule-engine
+## Running locally
 
-2. **Install the required packages:**
-   
-   ```bash
-   pip install -r requirements.txt
+Install dependencies:
 
-## Run the application:
+```bash
+pip install -r requirements.txt
+```
 
-  ```bash
-   python app.py
+Start the app:
 
+```bash
+python app.py
+```
+
+## Why this repo matters
+
+This is an earlier backend-oriented project, but it is still a useful example of application logic design rather than just UI work. The AST-based rule representation is the part that makes it interesting.
